@@ -1,15 +1,5 @@
-res://maps/level one map.tscn
 res://menus/main_menu.tscn
 res://menus/options_menu.tscn
 res://music/Main menu music.tscn
-res://menus/options_menu.gd
-res://menus/Main Menu.gd
-res://maps/level one map.gd
+res://maps/level one map.tscn
 res://menus/ingame_options_menu.tscn
-res://menus/ingame_options_menu.gd
-res://unused items/node_2d.tscn
-res://character/Sprite2D.gd
-res://camera/select.tscn
-res://menus/Ambience button.gd
-res://menus/Button.gd
-res://character/player.gd

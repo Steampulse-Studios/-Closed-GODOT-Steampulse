@@ -1,49 +1,51 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1707167210
-::res://camera/::1707162632
+::res://::1707168765
+-KEEP ITEMS CAMMEL CASE AND IN CORRECT FOLDERS!!!-.txt::TextFile::-1::1707167465::0::1::::<><>::
+README.md::TextFile::-1::1707168472::0::1::::<><>::
+::res://camera/::1707168527
 Camera2D.gd::GDScript::-1::1702414012::0::1::::<>CharacterBody2D<>::
-select.tscn::PackedScene::952310876262418833::1707162632::0::1::::<><>::res://camera/Camera2D.gd
-::res://character/::1707160246
-player.gd::GDScript::-1::1706899218::0::1::::<>CharacterBody2D<>::
+select.tscn::PackedScene::952310876262418833::1707167507::0::1::::<><>::res://camera/Camera2D.gd
+::res://character/::1707168527
+player.gd::GDScript::-1::1707167997::0::1::::<>CharacterBody2D<>::
 player.tscn::PackedScene::4395296561183637632::1702414012::0::1::::<><>::res://Player.gd<>uid://dfqit1m2i28g6
 robot playerrr reversed.png::CompressedTexture2D::1771237483032433152::1702503274::1707160246::1::::<><>::
 robot playerrr.png::CompressedTexture2D::3366750576101085818::1702414012::1707160246::1::::<><>::
 robotFighter.png::CompressedTexture2D::5963688754488260073::1702503274::1707160246::1::::<><>::
-Sprite2D.gd::GDScript::-1::1702503274::0::1::::<>CharacterBody2D<>::
+Sprite2D.gd::GDScript::-1::1707167354::0::1::::<>CharacterBody2D<>::
 ::res://code/::1706902608
-::res://light/::1702503290
+::res://light/::1707168527
 light rts game.png::CompressedTexture2D::5119754723857337723::1702503274::1702503290::1::::<><>::
-::res://maps/::1707167112
+::res://maps/::1707168527
 level one map GAME.gd::GDScript::-1::1707165076::0::1::::<>Node2D<>::
-level one map.gd::GDScript::-1::1707166410::0::1::::<>Node2D<>::
-level one map.tscn::PackedScene::8527965065471655296::1707167112::0::1::::<><>::uid://ce7bu22xyywf0::::res://light/light rts game.png<>res://maps/level one map.gd<>uid://dj64auhxodhw::::res://tileset/cave making tileset.png<>uid://du7jlmbcu4ow3::::res://tileset/decorative ccave.png<>uid://61i8toubhhtv::::res://tileset/water for rts.png<>uid://dwjmbadhj2jwy::::res://tileset/really really cool cve tiles.png<>res://character/player.gd<>uid://bn745i7qvr6iw::::res://character/robot playerrr.png
-::res://menus/::1707167112
-Ambience button.gd::GDScript::-1::1702414016::0::1::::<>Button<>::
+level one map.gd::GDScript::-1::1707167708::0::1::::<>Node2D<>::
+level one map.tscn::PackedScene::8527965065471655296::1707168002::0::1::::<><>::uid://ce7bu22xyywf0::::res://light/light rts game.png<>res://maps/level one map.gd<>uid://dj64auhxodhw::::res://tileset/cave making tileset.png<>uid://du7jlmbcu4ow3::::res://tileset/decorative ccave.png<>uid://61i8toubhhtv::::res://tileset/water for rts.png<>uid://dwjmbadhj2jwy::::res://tileset/really really cool cve tiles.png<>res://character/player.gd<>uid://bn745i7qvr6iw::::res://character/robot playerrr.png
+::res://menus/::1707168527
+Ambience button.gd::GDScript::-1::1707167708::0::1::::<>Button<>::
 AnimatedSprite2D.gd::GDScript::-1::1706899427::0::1::::<>AnimatedSprite2D<>::
 btnExit.gd::GDScript::-1::1702414016::0::1::::<>Button<>::
 btnStart.gd::GDScript::-1::1702414016::0::1::::<>Button<>::
-Button.gd::GDScript::-1::1702414016::0::1::::<>Button<>::
+Button.gd::GDScript::-1::1707167708::0::1::::<>Button<>::
 HSlider.gd::GDScript::-1::1702414016::0::1::::<>HSlider<>::
 h_slider.tscn::PackedScene::5657724898928753008::1707161797::0::1::::<><>::res://menus/HSlider.gd
-ingame_options_menu.gd::GDScript::-1::1707166767::0::1::::<>Control<>::
-ingame_options_menu.tscn::PackedScene::728617886850151810::1707167112::0::1::::<><>::res://menus/ingame_options_menu.gd<>uid://cmuv5xjenicii::::res://menus/h_slider.tscn<>res://menus/Button.gd<>res://menus/Ambience button.gd<>uid://et2rnachm1ro::::res://sounds/529605__chalicewell__katzenmix.wav<>uid://cwlic2yi60wya::::res://sounds/110011__tuberatanka__cat-meow.wav
+ingame_options_menu.gd::GDScript::-1::1707167708::0::1::::<>Control<>::
+ingame_options_menu.tscn::PackedScene::728617886850151810::1707168002::0::1::::<><>::res://menus/ingame_options_menu.gd<>uid://cmuv5xjenicii::::res://menus/h_slider.tscn<>res://menus/Button.gd<>res://menus/Ambience button.gd<>uid://et2rnachm1ro::::res://sounds/529605__chalicewell__katzenmix.wav<>uid://cwlic2yi60wya::::res://sounds/110011__tuberatanka__cat-meow.wav
 Main Menu.gd::GDScript::-1::1707165987::0::1::::<>Control<>::
-main_menu.tscn::PackedScene::428425165216000236::1707167109::0::1::::<><>::res://menus/Main Menu.gd
-options_menu.gd::GDScript::-1::1707167109::0::1::::<>Control<>::
-options_menu.tscn::PackedScene::4922730301231200455::1707167110::0::1::::<><>::res://menus/options_menu.gd<>uid://cmuv5xjenicii::::res://menus/h_slider.tscn<>uid://et2rnachm1ro::::res://sounds/529605__chalicewell__katzenmix.wav<>uid://cwlic2yi60wya::::res://sounds/110011__tuberatanka__cat-meow.wav<>res://menus/Button.gd<>res://menus/Ambience button.gd
-::res://music/::1707167210
-Main menu music.tscn::PackedScene::9164087937378871055::1707167110::0::1::::<><>::uid://djnk0np8qtask::::res://music/rust_and_ruin_title_wip2-standard.mp3
+main_menu.tscn::PackedScene::428425165216000236::1707167999::0::1::::<><>::res://menus/Main Menu.gd
+options_menu.gd::GDScript::-1::1707167708::0::1::::<>Control<>::
+options_menu.tscn::PackedScene::4922730301231200455::1707167999::0::1::::<><>::res://menus/options_menu.gd<>uid://cmuv5xjenicii::::res://menus/h_slider.tscn<>uid://et2rnachm1ro::::res://sounds/529605__chalicewell__katzenmix.wav<>uid://cwlic2yi60wya::::res://sounds/110011__tuberatanka__cat-meow.wav<>res://menus/Button.gd<>res://menus/Ambience button.gd
+::res://music/::1707168527
+Main menu music.tscn::PackedScene::9164087937378871055::1707167999::0::1::::<><>::uid://djnk0np8qtask::::res://music/rust_and_ruin_title_wip2-standard.mp3
 rust_and_ruin_title_wip2-standard.mp3::AudioStreamMP3::7818451076896774630::1702414016::1707161521::1::::<><>::
-::res://sounds/::1707166036
+::res://sounds/::1707168527
 110011__tuberatanka__cat-meow.wav::AudioStreamWAV::6340194845859192128::1702414016::1707160246::1::::<><>::
 529605__chalicewell__katzenmix.wav::AudioStreamWAV::321648952084622408::1702414016::1707160246::1::::<><>::
 default_bus_layout.tres::AudioBusLayout::386812054281459376::1702414016::0::1::::<><>::
-::res://tileset/::1707160899
+::res://tileset/::1707168527
 cave making tileset.png::CompressedTexture2D::231079976745063504::1700247537::1700247597::1::::<><>::
 cave_tiles.png::CompressedTexture2D::2618973984057367963::1700247537::1700247597::1::::<><>::
 decorative ccave.png::CompressedTexture2D::8629665740581476200::1700247537::1700247597::1::::<><>::
 really really cool cve tiles.png::CompressedTexture2D::8722726405575216688::1700247537::1700247597::1::::<><>::
 water for rts.png::CompressedTexture2D::2230073662006794623::1700247537::1700247597::1::::<><>::
-::res://unused items/::1707167210
+::res://unused items/::1707168527
 dark fallout (1).ogg::AudioStreamOggVorbis::2122626303205339269::1702414016::1707167210::1::::<><>::
-node_2d.tscn::PackedScene::3390670858379444996::1707162638::0::1::::<><>::uid://du7jlmbcu4ow3
+node_2d.tscn::PackedScene::3390670858379444996::1707167508::0::1::::<><>::uid://du7jlmbcu4ow3::::res://tileset/decorative ccave.png<>uid://dwjmbadhj2jwy::::res://tileset/really really cool cve tiles.png
