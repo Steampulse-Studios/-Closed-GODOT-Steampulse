@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmuv5xjenicii"]
+
+[ext_resource type="Script" path="res://menus/HSlider.gd" id="1_hcc8r"]
+
+[node name="Volume slider" type="HSlider"]
+offset_right = 8.0
+offset_bottom = 16.0
+max_value = 1.0
+step = 0.001
+script = ExtResource("1_hcc8r")

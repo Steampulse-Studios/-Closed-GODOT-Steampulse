@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5ihly6t2wj0p"
+path="res://.godot/imported/dark fallout (1).ogg-bdb3c3f09a401263588af137cb4554e3.oggvorbisstr"
+
+[deps]
+
+source_file="res://unused items/dark fallout (1).ogg"
+dest_files=["res://.godot/imported/dark fallout (1).ogg-bdb3c3f09a401263588af137cb4554e3.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

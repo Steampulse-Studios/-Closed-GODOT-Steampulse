@@ -1,0 +1,14 @@
+VBoxContainer
+Button
+Label
+RichTextLabel
+HBoxContainer
+CenterContainer
+AudioStreamPlayer
+AudioStreamPlayer2D
+AnimationPlayer
+PanelContainer
+HSlider
+Container
+MarginContainer
+ColorRect

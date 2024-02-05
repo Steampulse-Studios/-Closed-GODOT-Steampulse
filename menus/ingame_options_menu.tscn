@@ -1,0 +1,124 @@
+[gd_scene load_steps=7 format=3 uid="uid://km7h3bty78c1"]
+
+[ext_resource type="Script" path="res://menus/ingame_options_menu.gd" id="1_b5hy2"]
+[ext_resource type="PackedScene" uid="uid://cmuv5xjenicii" path="res://menus/h_slider.tscn" id="2_l2qhj"]
+[ext_resource type="Script" path="res://menus/Button.gd" id="3_qd3od"]
+[ext_resource type="Script" path="res://menus/Ambience button.gd" id="4_0yt6d"]
+[ext_resource type="AudioStream" uid="uid://et2rnachm1ro" path="res://sounds/529605__chalicewell__katzenmix.wav" id="5_q2s1o"]
+[ext_resource type="AudioStream" uid="uid://cwlic2yi60wya" path="res://sounds/110011__tuberatanka__cat-meow.wav" id="6_xsnpr"]
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b5hy2")
+
+[node name="contents" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 680.0
+offset_top = 192.0
+offset_right = 869.0
+offset_bottom = 388.0
+
+[node name="options" type="PanelContainer" parent="contents"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="contents" type="VBoxContainer" parent="contents/options"]
+layout_mode = 2
+
+[node name="master_label" type="Label" parent="contents/options/contents"]
+layout_mode = 2
+text = "Master Volume"
+
+[node name="master" parent="contents/options/contents" instance=ExtResource("2_l2qhj")]
+layout_mode = 2
+bus_name = "Master"
+
+[node name="music_label" type="Label" parent="contents/options/contents"]
+layout_mode = 2
+text = "Music Volume"
+
+[node name="music" parent="contents/options/contents" instance=ExtResource("2_l2qhj")]
+layout_mode = 2
+bus_name = "music"
+
+[node name="sfx_label" type="Label" parent="contents/options/contents"]
+layout_mode = 2
+text = "SFX Volume"
+
+[node name="sfx" parent="contents/options/contents" instance=ExtResource("2_l2qhj")]
+layout_mode = 2
+bus_name = "sfx"
+
+[node name="ambience_label" type="Label" parent="contents/options/contents"]
+layout_mode = 2
+text = "Ambience Volume"
+
+[node name="ambience" parent="contents/options/contents" instance=ExtResource("2_l2qhj")]
+layout_mode = 2
+bus_name = "ambience"
+
+[node name="Back to game button" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 520.0
+offset_top = 144.0
+offset_right = 633.0
+offset_bottom = 184.0
+
+[node name="back to game" type="Button" parent="Back to game button"]
+layout_mode = 2
+text = "Back to game"
+
+[node name="Main menu button" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 528.0
+offset_top = 440.0
+offset_right = 624.0
+offset_bottom = 480.0
+
+[node name="Button" type="Button" parent="Main menu button"]
+layout_mode = 2
+text = "Main menu"
+
+[node name="Play SFX" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 296.0
+offset_right = 470.0
+offset_bottom = 327.0
+
+[node name="SFX button" type="Button" parent="Play SFX"]
+layout_mode = 2
+text = "Play sound"
+script = ExtResource("3_qd3od")
+
+[node name="Play ambience" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 344.0
+offset_right = 472.0
+offset_bottom = 384.0
+
+[node name="Ambience button" type="Button" parent="Play ambience"]
+layout_mode = 2
+text = "Play Ambience"
+script = ExtResource("4_0yt6d")
+
+[node name="sfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_xsnpr")
+volume_db = 10.0
+bus = &"sfx"
+
+[node name="ambience" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_q2s1o")
+volume_db = 10.0
+bus = &"ambience"
+
+[connection signal="pressed" from="Back to game button/back to game" to="." method="_on_back_to_game_pressed"]
+[connection signal="pressed" from="Main menu button/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Play SFX/SFX button" to="." method="_on_sfx_button_pressed"]
+[connection signal="pressed" from="Play ambience/Ambience button" to="." method="_on_ambience_button_pressed"]
