@@ -28472,7 +28472,7 @@ sources/0 = SubResource("TileSetAtlasSource_ir8dp")
 sources/3 = SubResource("TileSetAtlasSource_wunkm")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_y156m"]
-size = Vector2(8.216, 5)
+size = Vector2(17, 5)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tf4k4"]
 atlas = ExtResource("7_b5s2y")
@@ -28793,26 +28793,44 @@ layer_3/z_index = 0
 layer_3/tile_data = PackedInt32Array(262183, 327684, 23, 458717, 1245186, 5, 589789, 2, 2, 786398, 917506, 4, 327646, 1245186, 5, 393182, 1441794, 6, 720863, 1441794, 6, 262111, 1441794, 6, 786401, 1245186, 5, 327672, 2, 2, 196604, 393218, 3, 262138, 917506, 4, 458740, 1245186, 5, 196607, 2, 14, 524276, 1441794, 6, 327669, 1441794, 6, 196606, 131074, 13, 196609, 2, 14, 917523, 2, 14, 983062, 393218, 3, 917529, 917506, 4, 1048608, 2, 2, 1245215, 655362, 11, 851996, 655362, 11, 851998, 1441794, 6, 851994, 1441794, 6, 851992, 2, 14, 786465, 393218, 12, 786467, 1441794, 6, 1376288, 1441794, 6, 65583, 1179650, 10, 131125, 917506, 10, 30, 655362, 3, 33, 917506, 4, 31, 131074, 13, -65501, 2, 14, 65563, 1245186, 5, 131098, 1441794, 6, 131104, 2, 14, -65492, 917506, 4, 131115, 1245186, 5, 196649, 1441794, 6, 65587, 655362, 11, 1114106, 1441794, 6, 1048575, 1179650, 10, 917498, 917506, 10, 983042, 655362, 3, 786437, 1245186, 5, 851972, 917506, 4, 720902, 1441794, 6, 1048557, 655362, 3, 1048552, 917506, 4, 983018, 1245186, 5, 1245171, 393218, 3, 1179633, 1441794, 6, 786446, 655362, 11, 720906, 917506, 4, 10, 917506, 4, -131054, 393218, 3, 14, 2, 2, 12, 1245186, 5, 196619, 1441794, 6, -65514, 1441794, 6, 917472, 1441794, 6, 983014, 1441794, 6, 1245174, 1441794, 6, 327737, 2, 14, 65541, 917506, 4, 458736, 1245186, 5, 196644, 1245186, 5, 458734, 393218, 12, 917475, 393218, 12, 196585, 393218, 3, 131046, 917506, 4, 393195, 1441794, 6, 262118, 1441794, 6, -28, 1441794, 6, -65566, 131074, 13, 65502, 2, 14, -131105, 655362, 3, -196642, 1572866, 7, -262178, 1441794, 6, -131103, 1441794, 6, 1638443, 2, 2, 1441826, 917506, 4, 2031666, 655362, 3, 1835063, 1245186, 5, 589887, 393218, 3, 720965, 655362, 11, 983115, 1441794, 6, 852039, 917506, 4, 589890, 655362, 3, 458813, 1245186, 5, 327739, 393218, 12, 1900591, 393218, 12, 1507366, 1245186, 5, 1572903, 1441794, 6, 1179683, 2, 14, 327730, 2, 14, 917571, 2, 14, 1966137, 2, 14, 1966132, 2, 14, 2228288, 655362, 3, 2490442, 1179650, 10, 2424913, 2, 2, 2097234, 393218, 3, 2293845, 1245186, 5, 2490446, 393218, 12, 1900622, 131074, 13, 1769552, 1441794, 6, 2424903, 1441794, 6, 2359362, 1441794, 6, 2359364, 1245186, 5, 2097213, 917506, 4, 2031674, 131074, 13, 983113, 131074, 13, 1114188, 1441794, 6, 2228305, 1310720, 8, 720895, 262146, 9, 131041, 262146, 9)
 metadata/_edit_group_ = true
 
-[node name="playerCamera" type="Camera2D" parent="."]
-position = Vector2(-471, -19)
-scale = Vector2(1.04331, 1.00409)
-zoom = Vector2(2, 2)
-
 [node name="player" type="CharacterBody2D" parent="."]
 texture_filter = 1
-position = Vector2(-518, -18)
+position = Vector2(-484, 22)
 script = ExtResource("6_r3aja")
+metadata/_edit_lock_ = true
+
+[node name="playerCamera" type="Camera2D" parent="player"]
+position = Vector2(0, -5.72205e-06)
+scale = Vector2(1.04331, 1.00409)
+zoom = Vector2(2, 2)
+metadata/_edit_lock_ = true
 
 [node name="playerCollisionShape" type="CollisionShape2D" parent="player"]
-position = Vector2(32.324, 49.6578)
+position = Vector2(-1.5, 10)
 shape = SubResource("RectangleShape2D_y156m")
+metadata/_edit_lock_ = true
 
 [node name="playerAnimation" type="AnimatedSprite2D" parent="player"]
-position = Vector2(33.4319, 40.1578)
+position = Vector2(3.05176e-05, 0)
 scale = Vector2(0.640625, 0.6875)
 sprite_frames = SubResource("SpriteFrames_d7oiy")
 animation = &"idle"
 autoplay = "idle"
+metadata/_edit_lock_ = true
+
+[node name="pauseVBox" type="VBoxContainer" parent="player"]
+offset_left = -280.0
+offset_top = -158.0
+offset_right = -258.0
+offset_bottom = -136.0
+metadata/_edit_lock_ = true
+
+[node name="pauseBtn" type="Button" parent="player/pauseVBox"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontFile_xip58")
+theme_override_font_sizes/font_size = 10
+text = "II"
+metadata/_edit_lock_ = true
 
 [node name="endMapLight" type="PointLight2D" parent="."]
 position = Vector2(6302, 1266)
@@ -28831,17 +28849,6 @@ skew = 0.628319
 color = Color(0.501961, 0, 0.00784314, 1)
 energy = 1.15
 texture = ExtResource("1_huids")
+metadata/_edit_lock_ = true
 
-[node name="pauseVBox" type="VBoxContainer" parent="."]
-offset_left = -754.0
-offset_top = -177.0
-offset_right = -732.0
-offset_bottom = -155.0
-
-[node name="pauseBtn" type="Button" parent="pauseVBox"]
-layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_xip58")
-theme_override_font_sizes/font_size = 10
-text = "II"
-
-[connection signal="pressed" from="pauseVBox/pauseBtn" to="." method="_on_pause_btn_pressed"]
+[connection signal="pressed" from="player/pauseVBox/pauseBtn" to="." method="_on_pause_btn_pressed"]
