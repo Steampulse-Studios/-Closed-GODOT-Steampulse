@@ -28818,6 +28818,20 @@ animation = &"idle"
 autoplay = "idle"
 metadata/_edit_lock_ = true
 
+[node name="pauseVBox" type="VBoxContainer" parent="player"]
+offset_left = -280.0
+offset_top = -158.0
+offset_right = -258.0
+offset_bottom = -136.0
+metadata/_edit_lock_ = true
+
+[node name="pauseBtn" type="Button" parent="player/pauseVBox"]
+layout_mode = 2
+theme_override_fonts/font = SubResource("FontFile_xip58")
+theme_override_font_sizes/font_size = 10
+text = "II"
+metadata/_edit_lock_ = true
+
 [node name="endMapLight" type="PointLight2D" parent="."]
 position = Vector2(6302, 1266)
 scale = Vector2(5.46484, 3.01563)
@@ -28837,16 +28851,4 @@ energy = 1.15
 texture = ExtResource("1_huids")
 metadata/_edit_lock_ = true
 
-[node name="pauseVBox" type="VBoxContainer" parent="."]
-offset_left = -754.0
-offset_top = -177.0
-offset_right = -732.0
-offset_bottom = -155.0
-
-[node name="pauseBtn" type="Button" parent="pauseVBox"]
-layout_mode = 2
-theme_override_fonts/font = SubResource("FontFile_xip58")
-theme_override_font_sizes/font_size = 10
-text = "II"
-
-[connection signal="pressed" from="pauseVBox/pauseBtn" to="." method="_on_pause_btn_pressed"]
+[connection signal="pressed" from="player/pauseVBox/pauseBtn" to="." method="_on_pause_btn_pressed"]
