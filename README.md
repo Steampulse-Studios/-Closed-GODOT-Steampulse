@@ -1,4 +1,4 @@
-#Version 0.1
+# Version 0.1
 ## GODOT Steampulse
 Steampulse is a RTS game
 
